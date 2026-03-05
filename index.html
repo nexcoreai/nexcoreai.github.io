@@ -3,7 +3,39 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="NexCore Technologies builds scalable cloud, AI, mobile, cybersecurity, and DevOps solutions for startups and enterprises worldwide."/>
+  <meta name="keywords" content="NexCore Technologies, software development company, AI development, cloud solutions, DevOps services, cybersecurity, mobile app development"/>
+  <meta name="author" content="NexCore Technologies"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <link rel="canonical" href="https://nexcoreai.github.io/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="NexCore Technologies — Building Tomorrow"/>
+  <meta property="og:description" content="Enterprise-grade software, cloud infrastructure, and AI-powered solutions engineered for speed and built for scale."/>
+  <meta property="og:url" content="https://nexcoreai.github.io/"/>
+  <meta property="og:site_name" content="NexCore Technologies"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="NexCore Technologies — Building Tomorrow"/>
+  <meta name="twitter:description" content="Partner with NexCore for cloud, AI, cybersecurity, and product engineering services."/>
   <title>NexCore Technologies — Building Tomorrow</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NexCore Technologies",
+    "url": "https://nexcoreai.github.io/",
+    "logo": "https://nexcoreai.github.io/favicon.svg",
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://github.com/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@nexcore.io"
+    },
+    "description": "NexCore Technologies delivers AI, cloud, cybersecurity, and full-cycle product development services for global businesses."
+  }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     /* ═══════════════════════════ RESET & VARS ═══════════════════════════ */
@@ -493,6 +525,35 @@
     }
     .social-btn:hover { border-color: var(--cyan); color: var(--cyan); }
 
+    /* ═══════════════════════════ FAQ ═══════════════════════════ */
+    #faq { background: var(--surface); }
+    .faq-grid {
+      display: grid;
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      padding: 1.1rem 1.2rem;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-h);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.92rem;
+      margin-top: 0.7rem;
+    }
+
     /* ═══════════════════════════ SCROLL REVEAL ═══════════════════════════ */
     .reveal {
       opacity: 0; transform: translateY(30px);
@@ -514,6 +575,8 @@
       .nav-links { display: none; }
       .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
       .cta-input-row { flex-direction: column; }
+      section { padding: 5.5rem 6%; }
+      nav { padding: 1rem 6%; }
     }
   </style>
 </head>
@@ -527,6 +590,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#portfolio">Work</a></li>
     <li><a href="#tech">Tech Stack</a></li>
+    <li><a href="seo-for-new-users.html">SEO Guide</a></li>
     <li><a href="#testimonials">Reviews</a></li>
   </ul>
   <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
@@ -584,6 +648,29 @@
       <hr class="tc-divider"/>
       <div class="tc-status"><div class="tc-dot"></div> All Systems Operational</div>
     </div>
+  </div>
+</section>
+
+<!-- ════════════ FAQ / SEO INTENT ════════════ -->
+<section id="faq">
+  <div class="sec-header centered reveal">
+    <p class="sec-label">SEO Questions</p>
+    <h2 class="sec-title">How We Help New Users Find You</h2>
+    <p class="sec-sub">These search-intent-focused answers improve relevance for high-value queries and support stronger rankings over time.</p>
+  </div>
+  <div class="faq-grid">
+    <details class="faq-item reveal">
+      <summary>How does NexCore improve SEO for a new business website?</summary>
+      <p>We start with keyword mapping, technical SEO fixes, content clusters, and schema markup. This creates a strong foundation so search engines can crawl, understand, and rank your pages faster.</p>
+    </details>
+    <details class="faq-item reveal">
+      <summary>Which pages should be created first for SEO growth?</summary>
+      <p>Priority pages include services, about, contact, and educational content such as guides or case studies. This structure supports both commercial and informational intent for new visitors.</p>
+    </details>
+    <details class="faq-item reveal">
+      <summary>How do you convert search traffic into customers?</summary>
+      <p>We align each page to user intent, add clear CTAs, improve trust signals (testimonials, process, certifications), and optimize page speed and mobile UX so visitors are more likely to contact your team.</p>
+    </details>
   </div>
 </section>
 
@@ -895,17 +982,18 @@
     <div>
       <div class="footer-col-title">Company</div>
       <ul class="footer-links">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Team</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
         <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="seo-for-new-users.html">SEO Guide</a></li>
         <li><a href="#">Press</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Contact</div>
       <ul class="footer-links">
-        <li><a href="#">hello@nexcore.io</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+        <li><a href="mailto:hello@nexcore.io">hello@nexcore.io</a></li>
         <li><a href="#">+1 (800) 639-2267</a></li>
         <li><a href="#">San Francisco, CA</a></li>
         <li><a href="#">Dubai, UAE</a></li>
