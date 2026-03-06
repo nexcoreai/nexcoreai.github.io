@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact NexCore Technologies for cloud, AI, and software development consulting."/>
+  <meta name="description" content="Contact NexCore Technologies for cloud, AI, website development, and SEO services."/>
   <link rel="canonical" href="https://nexcoreai.github.io/contact.html"/>
   <title>Contact NexCore</title>
   <style>
@@ -13,19 +13,27 @@
     a{color:var(--cyan)} .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
     label{display:block;margin:.7rem 0 .3rem;color:var(--muted)} input,textarea{width:100%;padding:.7rem;border-radius:8px;border:1px solid var(--border);background:#081223;color:var(--white)}
     button{margin-top:1rem;padding:.7rem 1.2rem;background:var(--cyan);border:none;border-radius:8px;cursor:pointer}
+    .note{margin-top:1rem;color:var(--muted);font-size:.9rem;line-height:1.6}
   </style>
 </head>
 <body>
   <main class="wrap">
     <p><a href="/">← Back to Home</a></p>
     <h1>Contact Us</h1>
-    <p style="color:#78a0c2">Tell us about your project goals and timeline.</p>
-    <form class="card">
-      <label for="name">Name</label><input id="name" type="text"/>
-      <label for="email">Email</label><input id="email" type="email"/>
-      <label for="msg">Project Details</label><textarea id="msg" rows="5"></textarea>
-      <button type="button">Send Inquiry</button>
+    <p style="color:#78a0c2">Aapka message seedha email par aayega: <strong>jyoti.sahani@buldel.com</strong></p>
+
+    <form class="card" action="https://formsubmit.co/jyoti.sahani@buldel.com" method="POST">
+      <input type="hidden" name="_subject" value="New Website Inquiry from NexCore Site"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://nexcoreai.github.io/contact.html"/>
+
+      <label for="name">Name</label><input id="name" name="name" type="text" required/>
+      <label for="email">Email</label><input id="email" name="email" type="email" required/>
+      <label for="msg">Project Details</label><textarea id="msg" name="message" rows="5" required></textarea>
+      <button type="submit">Send Inquiry</button>
     </form>
+
+    <p class="note">Note: Formsubmit pe first submission ke baad email verification karna hota hai. Verify karne ke baad sab inquiries aapki email ID par milengi.</p>
   </main>
 </body>
 </html>
