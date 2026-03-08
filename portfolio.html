@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects and portfolio page for NexCore." />
+  <title>Projects / Portfolio | NexCore</title>
+  <style>
+    :root { --bg:#071123; --surface:#0e1f39; --card:#132947; --border:rgba(0,200,255,.2); --text:#ebf6ff; --muted:#90b2cf; --accent:#00c8ff; }
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top right,#123056,#071123 45%);color:var(--text);font-family:Arial,sans-serif}
+    .wrap{width:min(1100px,92%);margin:0 auto}
+    nav{position:sticky;top:0;background:rgba(7,17,35,.93);border-bottom:1px solid var(--border);backdrop-filter:blur(8px)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0;gap:1rem;flex-wrap:wrap}
+    .nav-links{display:flex;gap:1rem;flex-wrap:wrap}.nav-links a{color:var(--muted);text-decoration:none}.nav-links a.active,.nav-links a:hover{color:var(--accent)}
+    .btn-logout{padding:.5rem .8rem;border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none}
+    .hero{padding:2rem 0 1rem}.hero p{color:var(--muted)}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));padding:1rem 0 2rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem}
+    .tag{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:rgba(0,200,255,.12);font-size:.8rem;color:var(--accent)}
+    .card p{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <strong>NexCore Client Area</strong>
+      <div class="nav-links">
+        <a class="active" href="portfolio.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact-us.html">Contact</a>
+      </div>
+      <a href="#" class="btn-logout" id="logoutBtn">Logout</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Projects / Portfolio</h1>
+      <p>Yahan aapke completed demo projects showcase kiye gaye hain taaki clients ek nazar mein quality check kar saken.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <span class="tag">Company Website</span>
+        <h2>Corporate Presence Platform</h2>
+        <p>Multi-page professional site with service pages, SEO metadata, and strong brand design consistency.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Landing Page</span>
+        <h2>Performance Marketing Landing</h2>
+        <p>Conversion-focused layout with clear CTA sections, testimonials, pricing, and lead capture form.</p>
+      </article>
+      <article class="card">
+        <span class="tag">E-commerce Demo</span>
+        <h2>Product Catalog + Cart Prototype</h2>
+        <p>Demo storefront with category browsing, product cards, CTA actions, and responsive mobile UX.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Blog Website</span>
+        <h2>Content Marketing Blog Setup</h2>
+        <p>Article library architecture including SEO pages, internal linking, and topic-based content organization.</p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    if (localStorage.getItem('nexcoreAuth') !== 'true') {
+      window.location.href = 'login.html';
+    }
+    document.getElementById('logoutBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      localStorage.removeItem('nexcoreAuth');
+      localStorage.removeItem('nexcoreUser');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

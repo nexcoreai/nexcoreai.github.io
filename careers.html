@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Careers at NexCore." />
+  <title>Careers | NexCore</title>
+  <style>
+    :root{--bg:#071123;--card:#112540;--border:rgba(0,200,255,.2);--text:#ebf6ff;--muted:#8fb2cf;--accent:#00c8ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
+    .wrap{width:min(1020px,92%);margin:0 auto;padding:2rem 0}
+    .top{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap}
+    a{color:var(--accent);text-decoration:none}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1rem}
+    .card{border:1px solid var(--border);border-radius:12px;background:var(--card);padding:1rem}
+    p,li{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <h1>Careers (Future Growth)</h1>
+      <p><a href="portfolio.html">← Back to Portfolio</a></p>
+    </div>
+    <p>Jab company scale karegi, yahan latest hiring roles show honge. Abhi ke liye sample structure ready hai.</p>
+    <section class="grid">
+      <article class="card">
+        <h2>Frontend Developer</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript proficiency</li>
+          <li>Responsive and accessible UI building</li>
+          <li>Git-based workflow experience</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Laravel Developer</h2>
+        <ul>
+          <li>Laravel APIs and authentication</li>
+          <li>Database design and optimization</li>
+          <li>Deployment and performance basics</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>SEO Content Executive</h2>
+        <ul>
+          <li>Keyword research + content planning</li>
+          <li>On-page SEO implementation</li>
+          <li>Analytics and reporting mindset</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    if (localStorage.getItem('nexcoreAuth') !== 'true') {
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
