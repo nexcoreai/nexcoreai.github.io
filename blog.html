@@ -22,7 +22,7 @@
 </head>
 <body>
   <main class="wrap">
-    <p><a href="index.html">← Back to Home</a></p>
+    <p><a href="portfolio.html">← Back to Portfolio</a></p>
     <h1>Blog Library</h1>
     <p>
       Is page par aapko practical aur direct implementation wale blog milenge.
@@ -73,5 +73,10 @@
       </article>
     </section>
   </main>
+  <script>
+    if (localStorage.getItem('nexcoreAuth') !== 'true') {
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>

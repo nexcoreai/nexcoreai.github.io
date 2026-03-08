@@ -3,118 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NexCore portfolio website for Laravel, Vue API integration, HTML/CSS expertise, and practical SEO services for business growth." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://nexcoreai.github.io/index.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="NexCore | Laravel, Vue API & Modern Web Solutions" />
-  <meta property="og:description" content="Explore NexCore services in Laravel development, Vue API integration, HTML/CSS, and SEO-focused growth." />
-  <meta property="og:url" content="https://nexcoreai.github.io/index.html" />
-  <meta property="og:image" content="https://nexcoreai.github.io/favicon.svg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="NexCore | Laravel, Vue API & Modern Web Solutions" />
-  <meta name="twitter:description" content="Laravel, Vue API, HTML/CSS, and SEO services for modern business websites." />
-  <title>NexCore | Laravel, Vue API & Modern Web Solutions</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "NexCore",
-      "url": "https://nexcoreai.github.io/",
-      "logo": "https://nexcoreai.github.io/favicon.svg",
-      "sameAs": [
-        "https://nexcoreai.github.io/"
-      ],
-      "description": "NexCore offers Laravel development, Vue.js API integration, HTML/CSS expertise, and SEO services."
-    }
-  </script>
+  <meta name="description" content="NexCore professional website with login-based client area, portfolio, blog, careers and contact pages." />
+  <title>NexCore | Professional Business Website</title>
   <style>
-    :root {
-      --bg: #071123;
-      --surface: #0d1b32;
-      --card: #10233f;
-      --border: rgba(0, 200, 255, 0.2);
-      --text: #ebf6ff;
-      --muted: #8fb1cf;
-      --accent: #00c8ff;
-      --accent-2: #2bf7c1;
-    }
+    :root { --bg: #071123; --surface: #0d1b32; --card: #10233f; --border: rgba(0, 200, 255, 0.2); --text: #ebf6ff; --muted: #8fb1cf; --accent: #00c8ff; --accent-2: #2bf7c1; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top right, #102d4f 0%, var(--bg) 40%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: radial-gradient(circle at top right, #102d4f 0%, var(--bg) 40%); color: var(--text); line-height: 1.6; }
     .wrap { width: min(1120px, 92%); margin: 0 auto; }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(7, 17, 35, 0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-    }
+    nav { position: sticky; top: 0; z-index: 10; background: rgba(7, 17, 35, 0.92); border-bottom: 1px solid var(--border); }
     .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 0; gap: 1rem; }
-    .logo { font-weight: 800; letter-spacing: 0.3px; font-size: 1.3rem; }
+    .logo { font-weight: 800; font-size: 1.3rem; }
     .logo span { color: var(--accent); }
     .nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
     .nav-links a:hover { color: var(--accent); }
-
     .hero { padding: 4rem 0 2rem; }
-    .hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; margin: 0 0 1rem; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 1rem; }
     .hero h1 span { color: var(--accent); }
     .hero p { color: var(--muted); max-width: 760px; }
-    .btn-row { margin-top: 1.5rem; display: flex; gap: 0.8rem; flex-wrap: wrap; }
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 0.78rem 1.15rem;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      transition: 0.2s ease;
-    }
+    .btn-row { margin-top: 1.4rem; display: flex; gap: 0.8rem; flex-wrap: wrap; }
+    .btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 0.78rem 1.15rem; border-radius: 10px; border: 1px solid transparent; }
     .btn-primary { background: var(--accent); color: #04101f; }
-    .btn-primary:hover { transform: translateY(-2px); }
     .btn-secondary { border-color: var(--border); color: var(--text); }
     .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-
-    section { padding: 2.2rem 0; }
-    h2 { margin: 0 0 0.8rem; font-size: 1.7rem; }
+    section { padding: 2rem 0; }
+    h2 { margin: 0 0 .8rem; }
     .lead { color: var(--muted); margin: 0 0 1rem; }
     .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-    .card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent), var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1rem;
-    }
-    .card h3 { margin: 0 0 0.4rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; }
+    .card h3 { margin: 0 0 .4rem; }
     .card p { margin: 0; color: var(--muted); }
-    .card .btn { margin-top: 0.7rem; font-size: 0.9rem; }
-
-    .skills-strip {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1rem;
-      background: rgba(43, 247, 193, 0.06);
-    }
-    .skills-strip strong { color: var(--accent-2); }
-
-    footer {
-      margin-top: 2rem;
-      border-top: 1px solid var(--border);
-      padding: 1.4rem 0 2.2rem;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 720px) {
-      .nav-inner { align-items: flex-start; flex-direction: column; }
-    }
+    footer { margin-top: 2rem; border-top: 1px solid var(--border); padding: 1.4rem 0 2.2rem; color: var(--muted); font-size: .92rem; }
   </style>
 </head>
 <body>
@@ -123,86 +42,42 @@
       <div class="logo">Nex<span>Core</span></div>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about-me.html">About Me</a>
+        <a href="portfolio.html">Projects</a>
         <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
         <a href="contact-us.html">Contact</a>
+        <a href="login.html">Login</a>
       </div>
     </div>
   </nav>
 
   <main class="wrap">
     <section class="hero">
-      <h1>Aapke business ke liye <span>modern website</span> + fast growth setup.</h1>
+      <h1>Aapka website ab <span>zyada professional</span> aur structured hai.</h1>
       <p>
-        Maine homepage ko clean aur practical banaya hai, taaki users ko turant services, skill pages,
-        blog aur contact options mil sakein. Har major button alag page par le jaata hai.
+        Aapki requirement ke hisaab se login system, projects portfolio page, blog, careers aur full contact page create kiya gaya hai.
+        Protected pages open karne ke liye pehle login karna padega.
       </p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="services.html">Explore Services</a>
-        <a class="btn btn-secondary" href="blog.html">Read Blog</a>
-        <a class="btn btn-secondary" href="contact-us.html">Start Project</a>
+        <a class="btn btn-primary" href="login.html">Login to Continue</a>
+        <a class="btn btn-secondary" href="portfolio.html">Open Portfolio</a>
       </div>
     </section>
 
     <section>
-      <h2>Featured Service Pages</h2>
-      <p class="lead">Sab cards clickable hain aur dedicated pages par open hote hain.</p>
+      <h2>Website Structure (As Requested)</h2>
       <div class="grid">
-        <article class="card">
-          <h3>Laravel Development</h3>
-          <p>Secure backend, REST APIs, auth systems, dashboard workflows.</p>
-          <a class="btn btn-secondary" href="laravel-development.html">Open Page</a>
-        </article>
-        <article class="card">
-          <h3>Vue.js API Integration</h3>
-          <p>Frontend + API connection, dynamic data rendering, reusable components.</p>
-          <a class="btn btn-secondary" href="vue-api-integration.html">Open Page</a>
-        </article>
-        <article class="card">
-          <h3>HTML & CSS Expertise</h3>
-          <p>Responsive layouts, semantic structure, clean and readable UI code.</p>
-          <a class="btn btn-secondary" href="html-css-expertise.html">Open Page</a>
-        </article>
-        <article class="card">
-          <h3>SEO Services</h3>
-          <p>On-page setup, metadata strategy, internal linking and growth-ready content.</p>
-          <a class="btn btn-secondary" href="seo-services.html">Open Page</a>
-        </article>
+        <article class="card"><h3>1) Login Required Access</h3><p>Client pages ko protect kiya gaya hai using local auth guard.</p></article>
+        <article class="card"><h3>2) Projects / Portfolio</h3><p>Company Website, Landing Page, E-commerce Demo, Blog Website listed.</p></article>
+        <article class="card"><h3>3) Blog Page</h3><p>Web development, SEO, aur coding tutorial style resources available.</p></article>
+        <article class="card"><h3>4) Careers Page</h3><p>Future hiring ke liye ready template with sample roles.</p></article>
+        <article class="card"><h3>5) Contact Page</h3><p>Form, email, phone, address, Google map, and OTP demo flow added.</p></article>
       </div>
     </section>
 
-    <section>
-      <h2>Latest Blog Resources</h2>
-      <p class="lead">Aapki request ke hisaab se zyada blog content add kiya gaya hai.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Laravel + Vue API Architecture</h3>
-          <p>Production-level integration roadmap for real-world projects.</p>
-          <a class="btn btn-secondary" href="blog-laravel-vue-architecture.html">Read Blog</a>
-        </article>
-        <article class="card">
-          <h3>HTML/CSS UI System Guide</h3>
-          <p>How to create a scalable design structure with reusable sections.</p>
-          <a class="btn btn-secondary" href="blog-html-css-ui-system.html">Read Blog</a>
-        </article>
-        <article class="card">
-          <h3>SEO Content Plan (30 Days)</h3>
-          <p>Simple weekly execution model for organic traffic growth.</p>
-          <a class="btn btn-secondary" href="blog-seo-30-day-plan.html">Read Blog</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="skills-strip">
-      <h2>Your Skills Highlighted</h2>
-      <p>
-        <strong>Laravel</strong>, <strong>Vue.js API Integration</strong>, <strong>HTML</strong>, aur <strong>CSS</strong>
-        ko homepage mein clear highlight kiya gaya hai taaki clients ko aapki core expertise instantly samajh aaye.
-      </p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="about-me.html">View Full Skill Profile</a>
-      </div>
+    <section class="card" style="background:rgba(43,247,193,.06)">
+      <h2>Demo Login Credentials</h2>
+      <p><strong>Email:</strong> client@nexcore.in &nbsp; | &nbsp; <strong>Password:</strong> Nexcore@123</p>
     </section>
   </main>
 
